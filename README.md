@@ -26,7 +26,9 @@ pip install csbdeep
 pip install splinedist
 ```
 
-## Data augmentation
+## How to use
+
+### Data augmentation
 
 ```sh
 python augment_image_data.py
@@ -40,4 +42,10 @@ python training.py
 Open up  tensorboard to follow the results:
 ```sh
 tensorboard --logdir=.
+```
+
+### Prediction
+
+```sh
+python prediction.py './input/' './output'
 ```
