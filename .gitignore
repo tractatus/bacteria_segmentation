@@ -5,6 +5,8 @@ __pycache__/
 
 images/
 masks/
+output_*.tif
+output_*.zip
 
 # C extensions
 *.so
