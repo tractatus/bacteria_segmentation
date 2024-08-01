@@ -47,5 +47,13 @@ tensorboard --logdir=.
 ### Prediction
 
 ```sh
-python prediction.py './input/' './output'
+python prediction.py './examples/' 
 ```
+
+Where `examples` is the folder that contains `.tif` files for analysis.
+Format has to be 16-bit monochrome TIFF.
+
+The output will be produced in the active wokring directory as the original file names with prefix `output_`.
+
+- `output_*.tif` labels, 16-bit TIFF each cell has a unique unint16 value.
+- `output_*.zip` ImageJ ROI zip file, can be opened in ImageJ/Fiji ROI Manager.
